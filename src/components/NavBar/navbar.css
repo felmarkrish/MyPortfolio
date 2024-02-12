@@ -1,0 +1,83 @@
+.navbar {
+    background: rgba(2, 89, 85, 0.95);
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    height: 120px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, .40);
+}
+.isScroll .navbar {
+    background: rgba(2, 89, 85, 1) !important;
+} 
+.navbar .portfolio-logo {
+    display: flex;
+    width: 30%;
+    background: #42351f;
+    position: relative;
+    z-index: 1;
+}
+.navbar .portfolio-logo:before {
+    background: #42351f;
+    height: 100%;
+    width: 145%;
+    top: 0;
+    bottom: 0;
+    left: 140px;
+    right: initial;
+    transform: rotate(130deg);
+    z-index: -1;
+}
+.navbar .portfolio-logo > img {
+    transform: scale(1);
+    margin-left: 50px;
+}
+.navbar .portfolio-logo > img:hover {
+    transform: scale(0.9);
+}
+.NavMenu {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-right: 100px;
+    width: 70%;
+}
+.NavMenu .NavMenuListItem {
+    padding: 5px 10px;
+    background: none;
+    color: #FDE8CD;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+    line-height: 1;
+    z-index: 1;
+}
+.NavMenu .NavMenuListItem:before {
+    background: #17ef1d;
+    height: 2px;
+    width: 0;
+    top: initial;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+.NavMenu .NavMenuListItem:hover:before {
+    width: 100%;
+}
+.NavMenu .NavMenuListItem:hover {
+    color: #17ef1d;
+    text-shadow: 0 3px 20px rgba(23, 239, 29, 0.7);
+}
+.Hamburger {
+    background: #717171;
+    color: #fff;
+    padding: 20px 45px;
+    border-radius: 20px;
+
+}

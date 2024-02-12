@@ -1,0 +1,32 @@
+.sport-img-box .filtr-container .filtr-item {
+    margin-top: 30px;
+    width: 510px !important;
+}
+.sport-img-box .filtr-container .filtr-item img {
+    width: 100%;
+    border: 15px solid transparent;
+    margin-left: 20%;
+}
+#sport-holder .sport-container h3 {
+    text-align: center;
+}
+#sport-holder .sport-container ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#sport-holder .sport-container li {
+   border: 1px solid #000;
+   padding: 10px 20px;
+   background: #1a4d43;
+   border-radius: 20px;
+   cursor: pointer;
+   margin-top: 20px;
+   box-shadow: 0 0 10px rgba(23, 239, 29, 0.7);
+}
+#sport-holder .sport-container li:hover {
+    box-shadow: 0 0 20px rgba(23, 239, 29, 0.7);
+}
+#sport-holder {
+    padding: 150px 0;
+}

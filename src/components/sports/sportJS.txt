@@ -1,0 +1,51 @@
+import React, { useEffect } from 'react';
+import './sport.css';
+import image1 from '../../components/sports/image/city1.jpg';
+import $ from 'jquery'; // Import jQuery
+
+const Sport = () => {
+    useEffect(() => {
+        var filterizd = $('.filtr-container').filterizr({
+            // options here
+        });
+
+        // Cleanup function (optional)
+        return () => {
+            // Clean up any resources or subscriptions if needed
+        };
+    }, []); // Empty dependency array ensures the effect runs once after mount
+
+    return (
+        <div id='sport-holder' className=''>
+            <div className='wrap'>
+                <div className='sport-container'>
+                    <h5>My Sports</h5>
+                    <div className='container sport-img-box'>
+                        <div className='col-md12 col-xs-12'>
+                            <ul>
+                                <li data-fltr='all'>All items</li>
+                                <li data-fltr='1'>Web</li>
+                                <li data-fltr='2'>Graphics</li>
+                                <li data-fltr='3'>Marketing</li> {/* Corrected typo in data-fltr value */}
+                            </ul>
+
+                            <div className='filtr-container'>
+                                <div className='col-md filtr-item' data-category='1' data-sort='value'>
+                                    <img src={image1} alt='' />
+                                </div>
+                                <div className='col-md filtr-item' data-category='2' data-sort='value'>
+                                    <img src={image1} alt='' />
+                                </div>
+                                <div className='col-md filtr-item' data-category='3' data-sort='value'>
+                                    <img src={image1} alt='' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Sport;

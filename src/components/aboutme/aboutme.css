@@ -1,0 +1,229 @@
+#Aboutme-Parent {
+    padding: 125px 0;
+}
+.Aboutme-Header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+.Aboutme-Header h1 {
+    text-align: center;
+    font-size: 40px;
+    display: inline-block;
+    padding: 15px 50px;
+    color: #fff;
+    background: #055753;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.40);
+    box-shadow: 0 0 1px rgba(23, 239, 29, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.Aboutme-Header h1:before {
+    /* background: #17ef1d; */
+    background: linear-gradient(to right, #17ef1d 50%, #17ef1d 50%);
+    transform: rotate(15deg);
+    background-size: cover;
+    height: 80%;
+    width: 180%;
+    top: 0;
+    left: -40%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: rotatelines 1s linear;
+    z-index: -1;
+}
+.Aboutme-Header h1:hover:before {
+    /* animation: rotatelines 5s linear infinite; */
+    height: 190%;
+}
+.Aboutme-Header h1:after {
+    background: #42341f;
+    border-radius: 10px;
+    inset: 3px;
+    z-index: -1; 
+}
+.Aboutme-Holder {
+    display: flex;
+    align-items: center;
+}
+.Aboutme-Holder .col-2 {
+    width: 50%;
+}
+.Aboutme-Holder .textAboutme p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.Aboutme-Holder .textAboutme {
+    padding: 70px 60px;
+    border: 1px solid #17ef1d;
+    background: #055753;
+    position: relative;
+    z-index: 1;
+}
+.Aboutme-Holder .textAboutme:before {
+    border-top: 10px solid #17ee1d;
+    border-left: 10px solid #17ee1d;
+    /* background: url(../../assets/border-pattern1.png) center center; */
+    height: 105%;
+    width: 105%;
+    top: 15px;
+    bottom: initial;
+    left: 15px;
+    right: initial;
+    z-index: -1;
+}
+.Aboutme-Holder .textAboutme:after {
+    border-right: 10px solid #17ee1d;
+    border-bottom: 10px solid #17ee1d;
+    height: 105%;
+    width: 105%;
+    top: initial;
+    bottom: 15px;
+    left: initial;
+    right: 15px;
+    z-index: -1;
+}
+.Aboutme-Holder .textAboutme p:first-child {
+    margin-bottom: 40px;
+    color: #17ef1d;
+}
+.Aboutme-Holder .textAboutme p:nth-child(3) {
+    color: #FDE8CD;
+    margin-top: 25px;
+
+}
+.Aboutme-Holder .textAboutme h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.Aboutme-Holder .textAboutme p:last-child {
+    font-size: 20px;
+    margin-top: 20px;
+    background: #000;
+    padding: 10px 0;
+    border-radius: 0 20px 20px 0;
+    width: 68%;
+    display: flex;
+    justify-content: flex-end;
+    left: -170px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.Aboutme-Holder .textAboutme p:last-child:before {
+        background: linear-gradient(to right, #17ef1d 50%, #000 50%);
+        transform: rotate(0deg);
+        background-size: cover;
+        height: 50%;
+        width: 180%;
+        top: 12px;
+        left: -40%;
+        right: 0;
+        bottom: 0;
+        animation: rotateOneSidedline 8s linear infinite;
+        z-index: -1;
+}
+.Aboutme-Holder .textAboutme p:last-child:after {
+    background: #000;
+    border-radius: 10px;
+    inset: 3px;
+    z-index: -1;
+}
+.Aboutme-Holder .textAboutme p:last-child a {
+    color: #f7e4ca;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 1;
+}
+.Aboutme-Holder .textAboutme p:last-child a:first-child {
+    border-right: 1px solid #17ee1d;
+}
+.Aboutme-Holder .textAboutme p:last-child a:hover {
+    color: #17ef1d;
+}
+.Aboutme-Holder .About-ImgHolder {
+    display: flex;
+    justify-content: center;
+    /* background: url(../../components/aboutme/images/bg-8.png) no-repeat center center; */
+    background-size: cover;
+    padding: 10px 0;
+}
+.Aboutme-Holder .About-ImgHolder img {
+    border-radius: 230px;
+    padding: 40px 40px 0;
+    position: relative;
+    background-size: cover;
+    /* transform: rotateY(180deg); */
+    animation: changeImgshadow 5s infinite;
+    filter: drop-shadow(0px 0px 10px rgba(23, 239, 29, .37));
+    z-index: 1;
+}
+.Aboutme-Holder .About-ImgHolder img:before {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+svg {
+    margin-right: 15px;
+}
+@keyframes changeImgshadow {
+    0% {
+        filter: drop-shadow(0px 0px 10px rgba(23, 239, 29, .37));
+    }
+    10% {
+        filter: drop-shadow(0px 0px 15px rgba(23, 239, 29, .37));
+    }
+    20% {
+        filter: drop-shadow(0px 0px 20px rgba(23, 239, 29, .37));
+    }
+    30% {
+        filter: drop-shadow(0px 0px 25px rgba(23, 239, 29, .37));
+    }
+    40% {
+        filter: drop-shadow(0px 0px 30px rgba(23, 239, 29, .37));
+    }
+    50% {
+        filter: drop-shadow(0px 0px 35px rgba(23, 239, 29, .37));
+    }
+    60% {
+        filter: drop-shadow(0px 0px 30px rgba(23, 239, 29, .37));
+    }
+    60% {
+        filter: drop-shadow(0px 0px 25px rgba(23, 239, 29, .37));
+    }
+    60% {
+        filter: drop-shadow(0px 0px 20px rgba(23, 239, 29, .37));
+    }
+    60% {
+        filter: drop-shadow(0px 0px 15px rgba(23, 239, 29, .37));
+    }
+    100% {
+        filter: drop-shadow(0px 0px 10px rgba(23, 239, 29, .37));
+    }
+  }
+  @keyframes  rotatelines {
+    from {
+        transform: rotate(0deg);  
+    }
+    to {
+        transform: rotate(195deg);
+    }
+}
+@keyframes  rotateOneSidedline {
+    from {
+        transform: rotate(0deg);  
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

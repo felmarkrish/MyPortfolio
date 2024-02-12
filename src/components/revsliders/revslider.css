@@ -1,0 +1,109 @@
+.revsliderlogo {
+    width: 100%;
+    position: relative;
+    vertical-align: top;
+    z-index: 1;
+}
+.revsliderlogo:before {
+    background: #000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.revslider-holder {
+    overflow: hidden;
+    box-shadow: 0 3px 16px rgb(0, 0, 0, 0.5);
+}
+.revslider-holder .ProfileLogo {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    left: initial;
+    bottom: 0;
+    margin: auto;
+    padding: 0 160px 80px;
+    /* background: url(../../components/revsliders/image/bg-8.png) no-repeat center center; */
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+}
+.revsliderText {
+    position: absolute;
+    background: rgb(67 53 32 / 40%);
+    top: 0;
+    bottom: 80px;
+    box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.60);
+    z-index: 1;
+    left: 120px;
+    right: initial;
+    padding: 75px 8ch;
+    margin: auto;
+    height: fit-content;
+}
+.revsliderText h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    color: #17ef1d;
+    text-shadow: 0 3px 6px rgb(13 18 16 / 50%);
+}
+.revsliderText h1 > span:first-child {
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+}
+.revsliderText h1 > span:first-child:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background: url(../../components/revsliders/image/handWaveremove.png) no-repeat center center;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    bottom: 0;
+    left: 80px;
+    right: initial;
+    margin: auto;
+    z-index: -1;
+    animation: wave 2s infinite alternate;
+    transform-origin: 75% 75%;
+}
+.revsliderText h1 > span:nth-child(2) label {
+    color: #e6dbc2;
+    font-size: 80px;
+}
+.forallBG:before {
+  background: url(../../components/revsliders/image/forallBG.jpg) no-repeat center center;
+}
+
+@keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(16deg);
+    }
+    20% {
+      transform: rotate(-6deg);
+    }
+    30% {
+      transform: rotate(16deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(16deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }

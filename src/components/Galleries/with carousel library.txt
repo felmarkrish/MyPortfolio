@@ -1,0 +1,61 @@
+/* global $ */
+
+import React, { useEffect } from 'react';
+import './gallery.css';
+import './jquery.flipster.min.css';
+import gal1 from '../../components/Galleries/images/gal1.jpg';
+
+const Gallery = () => {
+  useEffect(() => {
+    const scriptJQuery = document.createElement('script');
+    scriptJQuery.src = 'https://code.jquery.com/jquery-3.7.1.min.js';
+    scriptJQuery.async = true;
+    document.body.appendChild(scriptJQuery);
+
+    scriptJQuery.onload = () => {
+      const scriptFlipster = document.createElement('script');
+      scriptFlipster.src = 'jquery.flipster.min.js';
+      scriptFlipster.async = true;
+      document.body.appendChild(scriptFlipster);
+
+      scriptFlipster.onload = () => {
+        $('.carousel').flipster();
+      };
+    };
+
+    return () => {
+      document.body.removeChild(scriptJQuery);
+    };
+  }, []);
+
+  return (
+    <div className='Gallery-holder'>
+      <div className='wrap'>
+        <div className='Gallery-container'>
+          <h3> Galleries</h3>
+          <div className='carousel'>
+            <ul>
+                    <li className='gal gal1'>
+                    <img src={gal1} alt='' className='img' />
+                    </li>
+                    <li className='gal gal1'>
+                    <img src={gal1} alt='' className='img' />
+                    </li>
+                    <li className='gal gal1'>
+                    <img src={gal1} alt='' className='img' />
+                    </li>
+                    <li className='gal gal1'>
+                    <img src={gal1} alt='' className='img' />
+                    </li>
+                    <li className='gal gal1'>
+                    <img src={gal1} alt='' className='img' />
+                    </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Gallery;

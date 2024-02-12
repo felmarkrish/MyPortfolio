@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="MyPortfolio"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./carousel.style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></script> -->
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+    
+    <script>
+      /** Sticky Header **/
+          $(window).scroll(function() {
+            if($(this).scrollTop() > 50){  
+              $('body').addClass('isScroll');
+            } else {
+              $('body').removeClass('isScroll');
+            }
+          });
+
+          /** Back to Top Button **/
+	if ($('#back-top').length) {
+	    var scrollTrigger = 300,
+	    backToTop = function () {
+	        var scrollTop = $(window).scrollTop();
+	        if(scrollTop > scrollTrigger) {
+	            $('#back-top').addClass('show');
+	        } else {
+	            $('#back-top').removeClass('show');
+	        }
+	    };
+
+	    backToTop();
+
+	    $(window).on('scroll', function () {
+	        backToTop();
+	    });
+
+	    $('#back-top').on('click', function (e) {
+	        e.preventDefault();
+	        $('html,body').animate({
+	            scrollTop: 0
+	        }, 700);
+	    });
+	}
+    </script>
+  </body>
+</html>

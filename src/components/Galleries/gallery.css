@@ -1,0 +1,67 @@
+#Gallery-holder {
+    padding: 180px 0 100px;
+}
+.GalImgContainers {
+    background: linear-gradient(to right, #2c5364, #0f2027);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+.Gallery-container {
+    padding: 50px 0 35px;
+    background: #025855a6;
+    position: relative;
+    z-index: 1;
+}
+.Gallery-container:before {
+    border: 1px double #fff;
+    height: auto;
+    width: auto;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    z-index: -1;
+}
+.Gallery-container h1 {
+    text-align: center;
+    display: table;
+    padding: 15px 50px;
+    color: #fff;
+    background: #42341f;
+    box-shadow: 0 0 1px rgba(23, 239, 29, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    width: auto;
+    margin: auto !important;
+    position: relative;
+    z-index: 1;
+}
+.Gallery-container h1:before {
+    background: linear-gradient(to right, #17ef1d 50%, #17ef1d 50%);
+    transform: rotate(15deg);
+    background-size: cover;
+    height: 80%;
+    width: 180%;
+    top: 0;
+    left: -40%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: rotatelines 1s linear;
+    z-index: -1;
+}
+.Gallery-container h1:after {
+    background: #184c41;
+    border-radius: 10px;
+    inset: 3px;
+    z-index: -1;
+}
+.Gallery-container h1:hover:before {
+    height: 180%;
+}
+.carousel {
+    height: 500px !important;
+}

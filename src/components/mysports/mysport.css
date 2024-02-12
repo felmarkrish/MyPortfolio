@@ -1,0 +1,98 @@
+#mySports-Container {
+    padding: 120px 0;
+}
+.mySport-box-holder {
+    display: flex;
+    gap: 5px;
+}
+.mySport-box-holder h3 {
+    text-align: center;
+    margin-bottom: 0 !important;
+    margin-top: 30px !important;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.mySport-box-holder h3:before {
+    background: #17ef1d;
+    height: 3px;
+    width: 30%;
+    bottom: 0;
+    top: initial;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+.chessSport-container:hover h3:before,
+.basket-Sport-Container:hover h3:before {
+    animation: changecolorbottomOrnament 10s linear infinite;
+}
+.chessSport-container,
+.basket-Sport-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.chessSport-container .content-holder,
+.basket-Sport-Container .content-holder {
+    width: 100%;
+    padding: 20px 60px;
+}
+.chessSport-container .content-holder p,
+.basket-Sport-Container .content-holder p {
+    font-size: 18px;
+    line-height: 2;
+}
+.img-holder {
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;
+}
+.img-holder img {
+    border-radius: 20px;
+}
+.img-holder img:hover {
+    transform: scale(0.9);
+}
+.Chess-box-holder,
+.basket-box-holder {
+    background: #025855a6;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+.Chess-box-holder:before,
+.basket-box-holder:before {
+    height: auto;
+    width: auto;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    border: 1px dotted #fff;
+    z-index: -1;
+}
+
+@keyframes changecolorbottomOrnament {
+    0% {
+        background: linear-gradient(to right, #fff 10%, #17ef1d 10%, #fde8cd 90%, #000 90%);
+    }
+    20% {
+        background: linear-gradient(to right, #fff 20%, #17ef1d 20%, #fde8cd 80%, #000 80%);
+    }
+    40% {
+        background: linear-gradient(to right, #fff 30%, #17ef1d 30%, #fde8cd 70%, #000 70%);
+    }
+    60% {
+        background: linear-gradient(to right, #fff 40%, #17ef1d 40%, #fde8cd 60%, #000 60%);
+    }
+    80% {
+        background: linear-gradient(to right, #fff 50%, #17ef1d 50%, #fde8cd 50%, #000 50%);
+    }
+    100% {
+        background: #17ef1d;
+    }
+  }

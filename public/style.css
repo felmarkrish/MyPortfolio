@@ -8,12 +8,20 @@
 body {
     width: 100%;
     height: 100vh;
-    background: #433520;
+    background: #fff;
     color: #fff;
     overflow: hidden;
     overflow-y: scroll;
 }
-
+.App {
+    transition: left 0.4s ease;
+}
+.App.is-click {
+    left: -310px;
+    position: relative;
+    transition: 0.4s;
+    overflow: hidden;
+}
 .forallBG {
     height: 100%;
     width: 100%;
@@ -22,7 +30,7 @@ body {
     z-index: 1;
 }
 .forallBG:before {
-     background: url(../../portfolio/src/assets/forallBG.jpg) no-repeat center center;
+    background: url(../../portfolio/src/assets/forallBG.jpg) no-repeat center center;
     height: 100%;
     width: 100%;
     background-size: cover !important;
@@ -48,10 +56,100 @@ body {
     max-width: 100%;
     margin: auto;
 }
+
+/* -------------------------------------------------------------- */
+            /* for mobile navigation bar */
+/* -------------------------------------------------------------- */
+.mobile-navigation {
+    background: #000;
+    height: 100%;
+    width: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: initial;
+    position: fixed;
+    padding: 50px 0;
+}
+.mobile-navigation > .logo {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    background: transparent;
+    margin: auto;
+}
+.mobile-navigation > .logo img {
+    border-radius: 105px;
+    filter: drop-shadow(0px 0px 10px rgba(23, 239, 29, .37));
+    border: 1px solid #fff;
+}
+.mobile-navigation > .nav-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* background: #000; */
+    margin: 0 10px;
+    padding: 10px 0 25px;
+    margin-top: 30px;
+    /* border-radius: 20px; */
+}
+.mobile-navigation > .nav-container > a {
+    font-size: 20px;
+    border-bottom: 1px solid #FDE8CD;
+    line-height: 2;
+    color: #ffffff;
+}
+.mobile-navigation > .contact {
+    margin: 50px 10px;
+    /* background: #000; */
+}
+.mobile-navigation > .contact label,
+.mobile-navigation > .contact a  {
+    color: #fff ;
+    font-size: 18px ;
+}
+.mobile-navigation > .nav-container > a:hover,
+.mobile-navigation > .contact a:hover,
+.copyright > p a:hover {
+    color: #17ef1d;
+    text-shadow: 0 3px 20px rgba(23, 239, 29, 0.7);
+}
+.mobile-navigation > .contact label {
+    font-weight: 500;
+}
+.mobile-navigation > .contact p {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border:1px solid #fff;
+    border-left: 10px solid #fff;
+    padding: 3px 0;
+    /* background: #000; */
+}
+.mobile-navigation > .contact p:first-child {
+    margin-bottom: 5px;
+}
+.mobile-navigation  {
+    opacity: 0;
+    display: none;
+}
+.copyright > p {
+    text-align: center;
+    font-size: 16px;
+}
+.copyright > p a {
+    color: #fff;
+}
+
 /* all transition */
 #sport-holder .sport-container li,
 .NavMenu .NavMenuListItem:before,
-.contact-form-holder > form input:last-of-type {
+.contact-form-holder > form input:last-of-type,
+.mobile-navigation > .nav-container > a,
+.mobile-navigation > .contact a,
+.copyright > p a {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
@@ -102,6 +200,11 @@ h3 {
 h4 {
     font-size: 35px !important;
 }
+
+/* ---------------------------------------------------- */
+                /* PSEUDO-CODE */
+/* ---------------------------------------------------- */
+#back-top:before,
 .Aboutme-Holder .About-ImgHolder img:before,
 .Aboutme-Holder .textAboutme p:last-child a:before,
 .Service-container .col-3 > .box-holder:before,
@@ -126,13 +229,900 @@ h4 {
 .Gallery-container h1:before,
 .Gallery-container h1:after,
 .Gallery-container:before,
-.mySport-box-holder h3:before {
+.mySport-box-holder h3:before,
+.Aboutme-Holder:before,
+.Aboutme-Holder:after {
     content: '';
     position: absolute;
     display: inline-block;
 }
-
+#back-top-holder {
+    height: 60px;
+    border-radius: 10px;
+    width: 60px;
+    position: fixed;
+    top: initial;
+    left: 20px;
+    bottom: 25px;
+    right: 0;
+    z-index: 1;
+}
+#back-top {
+    background: #000;
+    border-radius: 10px;
+    position: relative;
+    font-size: 45px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+#back-top:before {
+    /* background: url(../src/components/aboutme/images/bg-8.png);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; */
+}
+#back-top:hover {
+    background: #000; 
+}
 /* other form  */
 
+/* ---------------------------------------------------------- */
+/*                      MOBILE RESPONSIVE */
+/* ---------------------------------------------------------- */
+
+@media only screen and (max-width: 1840px) {
+    
+}
+@media only screen and (max-width: 1800px) {
+   
+}
+@media only screen and (max-width: 1800px) {
+   
+}
+@media only screen and (max-width: 1780px) {
+  
+}
+@media only screen and (max-width: 1740px) {
+    .revslider-holder .ProfileLogo{
+        padding: 0 70px 80px !important;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    .Contact-holder {
+        width: 80% !important;
+    }
+    .revslider-holder .ProfileLogo {
+        padding: 0 70px 0 !important;
+        bottom: 130px !important;
+    }
+}
+@media only screen and (max-width: 1640px) {
+   
+}
+@media only screen and (max-width: 1600px) {
+   
+}
+@media only screen and (max-width: 1580px) {
+   
+}
+@media only screen and (max-width: 1560px) {
+    .revsliderText {
+        bottom: 160px !important;
+        left: 80px !important;
+    }
+    .revslider-holder .ProfileLogo > img {
+        width: 85% !important;
+    }
+    .revslider-holder .ProfileLogo {
+        padding: 0 !important;
+    }
+    .Service-container .col-3 > .box-holder {
+        padding: 50px 10px !important;
+    }
+}
+
+@media only screen and (max-width: 1548px) {
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: 100% !important;
+        padding-left: 0 !important;
+    }
+}
+@media only screen and (max-width: 1540px) {
+    .revsliderText {
+        bottom: 190px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        bottom: 170px !important;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .wrap {
+        width: 95%;
+    }
+    .Aboutme-Holder .textAboutme:before,
+    .Aboutme-Holder .textAboutme:after {
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .revslider-holder .ProfileLogo > img {
+        width: 75% !important;
+    }
+    .revslider-holder .ProfileLogo {
+        right: 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+    .carousel {
+        margin-top: 10px !important;
+    }
+}
+@media only screen and (max-width: 1460px) {
+    .Aboutme-Holder .textAboutme p:last-child {
+        left: -90px !important;
+        width: 75% !important;
+    }
+    .Aboutme-Holder .About-ImgHolder img {
+        width: 80% !important;
+        padding: 0 0 0 40px !important;
+    }
+    .Aboutme-Holder .textAboutme {
+        padding: 40px 52px !important;
+        width: 55% !important;
+    }
+    .Aboutme-Holder .textAboutme p:first-child {
+        margin-bottom: 15px !important;
+    }
+    .Aboutme-Holder .textAboutme p:nth-child(3) {
+        margin-top: 15px !important;
+    }
+    .Aboutme-Holder .textAboutme p,
+    .Aboutme-Holder .textAboutme p:last-child {
+        font-size: 18px !important;
+    }
+    .revsliderText h1 > span:nth-child(2) label {
+        font-size: 70px !important;
+    }
+    .revsliderText {
+        padding: 60px 8ch !important;
+    }
+    .revsliderText {
+        bottom: 230px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        bottom: 200px !important;
+    }
+    .chessSport-container .content-holder, 
+    .basket-Sport-Container .content-holder {
+        padding: 20px 35px !important;
+    }
+}
+
+@media only screen and (max-width: 1420px) {
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: 79% !important;
+    }    
+}
+@media only screen and (max-width: 1400px) {
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: 81% !important;
+    }
+    .revsliderText {
+        bottom: 265px !important;
+        padding: 40px 8ch !important;
+    }
+    .revslider-holder .ProfileLogo > img {
+        width: 70% !important;
+    }
+    .revslider-holder .ProfileLogo {
+        bottom: 250px !important;
+    }
+    .Service-container .col-3 > .box-holder > .box-content p {
+        font-size: 18px !important;
+    }
+    h4 {
+        font-size: 32px !important;
+    }
+    .carousel {
+        height: 500px !important;
+        margin: auto !important;
+        width: 95% !important;
+    }
+    .navbar {
+        height: 100px !important;
+    }
+    .Chess-box-holder, .basket-box-holder {
+        padding: 70px 0 !important;
+    }
+}
+@media only screen and (max-width: 1360px) {
+    .Aboutme-Holder .About-ImgHolder img {
+        width: 70% !important;
+        padding: 0 0 0 40px !important;
+    }
+    .navbar .portfolio-logo > img {
+        margin-left: 10px !important;
+        width: 100% !important;
+    }
+    .navbar .portfolio-logo:before {
+        left: 130px !important;
+    }
+}
+@media only screen and (max-width: 1340px) {
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: 84% !important;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .Aboutme-Holder .textAboutme p:last-child {
+        left: -93px !important;
+        width: 89% !important;
+    }
+    h2 {
+        font-size: 43px !important;
+    }
+    .Aboutme-Holder .textAboutme:before {
+        border-top: 5px solid #17ee1d !important;
+        border-left: 5px solid #17ee1d !important;
+    }
+    .Aboutme-Holder .textAboutme:after {
+        border-right: 5px solid #17ee1d !important;
+        border-bottom: 5px solid #17ee1d !important;
+    } 
+    .revslider-holder .ProfileLogo {
+        bottom: 300px !important;
+    }
+    .revsliderText {
+        bottom: 335px !important;
+    }
+    .Contact-holder {
+        width: 90% !important;
+    }    
+}
+@media only screen and (max-width: 1260px) {
+    .Aboutme-Holder .textAboutme {
+        width: 60% !important;
+    }
+    .revslider-holder .ProfileLogo > img {
+        width: 60% !important;
+    }
+    .revslider-holder .ProfileLogo {
+        right: -95px !important;
+    }
+    .Service-container .col-3 {
+        gap: 10px !important;
+    }
+    .NavMenu {
+        margin-right: 30px !important;
+    }
+    .for-ornament {
+        padding: 0 30px;
+    }
+    .carousel {
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .revsliderText h1 > span:nth-child(2) label {
+        font-size: 60px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        bottom: 360px !important;
+    }
+    .revsliderText {
+        bottom: 370px !important;
+    }
+    .Service-container .col-3 {
+        flex-wrap: wrap;
+        gap: 20px !important;
+    }
+    .Service-container .col-3 > .box-holder {
+        width: 49% !important;
+    }
+    .NavMenu {
+        gap: 5px !important;
+    }
+    .revsliderText h1 > span:first-child {
+        font-size: 25px !important;
+    }
+    .revsliderText h1 > span:first-child:before {
+        bottom: 10px !important;
+        left: 60px !important;
+    }
+}
+@media only screen and (max-width: 1180px) {
+    .Aboutme-Holder .textAboutme {
+        width: 65% !important;
+    }
+    .img-holder img {
+        width: 70% !important;
+    }
+    .navbar .portfolio-logo:before {
+        left: 115px !important;
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .Aboutme-Holder .textAboutme {
+        width: 70% !important;
+    }
+    .Aboutme-Holder .About-ImgHolder img {
+        width: 85% !important;
+    }
+    h1 {
+        font-size: 40px !important;
+    }
+    .revsliderText {
+        bottom: 400px !important;
+    }
+    .NavMenu .NavMenuListItem {
+        font-size: 20px !important;
+    } 
+    .revslider-holder .ProfileLogo {
+        bottom: 380px !important;
+    }
+    .header-holder p {
+        padding: 5px 6px !important;
+        margin-right: 130px !important;
+    }
+    h3 {
+        font-size: 35px !important;
+    }
+    .Contact-holder {
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .Aboutme-Holder .textAboutme {
+        width: 75% !important;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: 93% !important;
+    }
+    .revsliderText {
+        bottom: 440px !important;
+    }
+    .revslider-holder .ProfileLogo > img {
+        width: 100% !important;
+    }
+    .revslider-holder .ProfileLogo {
+        bottom: 425px !important;
+        width: 35% !important;
+        right: 0px !important;
+    }
+    .Service-container .col-3 > .box-holder {
+        width: 48% !important;
+    }
+}
+@media only screen and (max-width: 1040px) {
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: 93% !important;
+    }
+    .Aboutme-Holder .textAboutme {
+        width: 82% !important;
+        border: none !important;
+        background: transparent !important;
+    }
+    .Aboutme-Holder {
+        border: 1px solid #17ef1d !important;
+        background: #055753 !important;
+        position: relative;
+        z-index: 1;
+    }
+    .Aboutme-Holder:before {
+        border-top: 5px solid #17ee1d;
+        border-left: 5px solid #17ee1d;
+        height: 105%;
+        width: 105%;
+        top: 15px;
+        bottom: initial;
+        left: 15px;
+        right: initial;
+        z-index: -1;
+    }
+    .Aboutme-Holder:after {
+        border-right: 5px solid #17ee1d;
+        border-bottom: 5px solid #17ee1d;
+        height: 105%;
+        width: 105%;
+        top: initial;
+        bottom: 15px;
+        left: initial;
+        right: 15px;
+        z-index: -1;
+    }
+    .Aboutme-Holder .textAboutme:before {
+        border-top: none !important;
+        border-left: none !important;
+    }
+    .Aboutme-Holder .textAboutme:after {
+        border-right: none !important;
+        border-bottom: none !important;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .Aboutme-Holder .textAboutme {
+        padding: 40px 25px 40px 50px !important;
+    }
+    .revsliderText {
+        padding: 40px 40px 40px 30px !important;
+        bottom: 460px !important;
+    }
+    h1 {
+        font-size: 35px !important;
+    }
+    .revsliderText h1 > span:nth-child(2) label {
+        font-size: 50px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        bottom: 450px !important;
+        width: 33% !important;
+    }
+    .NavMenu .NavMenuListItem {
+        font-size: 18px !important;
+        padding: 5px 5px !important;
+    }
+    .header-holder p {
+        margin-right: 125px !important;
+        font-size: 14px !important;
+    }
+    .contact-form-holder,
+    .contact-img-holder {
+        width: 50% !important;
+    }
+    
+}
+@media only screen and (max-width: 960px) {
+    .Aboutme-Holder .textAboutme {
+        padding: 40px 0px 40px 50px !important;
+    }
+    .navbar .portfolio-logo:before {
+        left: 90px !important;
+    }
+}
+@media only screen and (max-width: 920px) {
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: 97% !important;
+    }
+    h4 {
+        font-size: 28px !important;
+    }
+    h3 {
+        font-size: 30px !important;
+    }
+    h2 {
+        font-size: 33px !important;
+    }
+    .navbar,
+    .navbar .portfolio-logo {
+        height: 70px !important;
+    }
+    .navbar .portfolio-logo:before {
+        left: 65px !important;
+    }
+    .revsliderText {
+        bottom: 520px !important;
+        left: 50px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        bottom: 500px !important;
+    }
+    .Chess-box-holder:before, 
+    .basket-box-holder:before {
+        top: 10px !important;
+        bottom: 10px !important;
+        left: 10px !important;
+        right: 10px !important;
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+   
+}
+
+@media only screen and (max-width: 880px){
+    .Aboutme-Holder .textAboutme p:last-child {
+        left: -73px !important;
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .Aboutme-Holder .textAboutme {
+        width: 93% !important;
+        border: none !important;
+        background: transparent !important;
+    }
+    .Aboutme-Holder .About-ImgHolder img {
+        padding: 0 0 0 20px !important;
+    }
+    .Aboutme-Holder .About-ImgHolder {
+        padding: 0 0 100px !important;
+    }
+}
+@media only screen and (max-width: 840px) {
+    .Aboutme-Holder .textAboutme {
+        width: 100% !important;
+    }
+    .Aboutme-Holder .About-ImgHolder {
+        width: 30% !important;
+        position: absolute !important;
+        left: initial !important;
+        bottom: initial !important ;
+        top: 20px !important;
+        right: 5px !important;
+        padding: 0 0 0 !important;
+    }
+    .Aboutme-Holder .textAboutme {
+        padding: 185px 20px 40px 50px !important;
+    }
+    .Aboutme-Holder:before {
+        border-top: 3px solid #17ee1d !important;
+        border-left: 3px solid #17ee1d !important;
+        top: 10px !important;
+        left: 10px !important;
+    }
+    .Aboutme-Holder:after {
+        border-right: 3px solid #17ee1d !important;
+        border-bottom: 3px solid #17ee1d !important;
+        bottom: 10px !important;
+        right: 10px !important;
+    }
+    .Aboutme-Holder .About-ImgHolder img {
+        padding: 0 0 0 0 !important;
+    }
+    .Aboutme-Holder .textAboutme p:last-child {
+            width: fit-content !important;
+            padding-left: 60px !important;
+    }
+    .revsliderText {
+        bottom: 566px !important;
+        padding: 25px 40px 25px 30px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        bottom: 555px !important;
+    }
+    .Service-container .col-3 > .box-holder.three {
+        width: 100%  !important;
+    }
+    .Service-container .col-3 {
+        gap: 15px !important;
+    }
+    .contact-form-holder {
+        width: 55% !important;
+        padding: 40px 10px !important;
+    }
+    .contact-img-holder {
+        width: 45% !important;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+  
+}
+@media only screen and (max-width: 760px) {
+    .NavMenu {
+        gap: 2px !important;
+    }
+    .NavMenu .NavMenuListItem {
+        font-size: 16px !important;
+    }    
+    .navbar .portfolio-logo:before {
+        left: 55px !important;
+    }
+    .revsliderText h1 > span:first-child {
+        font-size: 20px !important;
+    }
+    .revsliderText h1 {
+        font-size: 30px !important;
+    }
+    .revsliderText h1 > span:nth-child(2) label {
+        font-size: 40px !important;
+    }
+    .revsliderText {
+        bottom: 600px !important;
+        left: 30px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        bottom: 585px !important;
+    }
+    .Service-container .col-3 > .box-holder {
+        width: 100% !important;
+    }
+    .Service-container .col-3 {
+        gap: 25px !important;
+    }
+    .mySport-box-holder {
+        flex-wrap: wrap;
+    }
+    .Chess-box-holder, .basket-box-holder {
+        width: 100% !important;
+    }
+    .Aboutme-Holder .textAboutme {
+        padding: 145px 20px 40px 50px !important;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .revsliderlogo {
+        height: 275px !important;
+    }
+    .Aboutme-Holder .textAboutme p:last-child {
+        padding-left: 58px !important;
+    }
+    .contact-img-holder {
+        width: 40% !important;
+    }
+    .contact-form-holder {
+        width: 60% !important;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .NavMenu {
+        display: none !important;
+    }
+    .navbar .portfolio-logo {
+        width: 40% !important;
+    }
+    .hamburger-menu {
+        display: block !important;
+    }
+    .revslider-holder .ProfileLogo,
+    .revslider-holder .revsliderText {
+        position: relative !important;
+    }
+    .revslider-holder .ProfileLogo {
+        top: -205px !important;
+        left: 0!important;
+        right: 0 !important;
+        width: 100% !important;
+        justify-content: flex-end;
+    }
+    .revslider-holder .ProfileLogo > img {
+        width: 32% !important;
+    }
+    .revslider-holder {
+        height: 275px !important;
+    }
+    .revslider-holder .revsliderText {
+        top: -385px !important;
+        width: 100% !important;
+        background: none !important;
+        box-shadow: unset !important;
+        z-index: 1;
+        right: initial;
+        margin: auto;
+        padding: 0 !important;
+        left: 0 !important;
+    }
+    .revsliderText h1 {
+        background: rgb(67 53 32 / 40%);
+        box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.60);
+        width: fit-content !important;
+        z-index: 1;
+        right: initial;
+        margin: auto;
+        height: fit-content;
+        padding: 25px 40px 25px 30px !important;
+        margin-left: 30px !important;
+    }
+    .mobile-navigation.is-visible {
+        opacity: 1;
+        display: block;
+    }
+    #back-top-holder {
+        height: 40px !important;
+        width: 40px !important;
+    }
+    #back-top {
+        font-size: 30px !important;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .revslider-holder .revsliderText {
+        top: -375px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        top: -195px !important;
+    }
+}
+@media only screen and (max-width: 590px) {
+    .revslider-holder .revsliderText {
+        top: -355px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        top: -180px !important;
+    }
+}
+@media only screen and (max-width: 571px) {
+    .Aboutme-Holder .textAboutme {
+        padding: 120px 20px 40px 30px !important;
+    }
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: fit-content !important;
+        padding-left: 30px !important;
+        left: -44px !important;
+  }
+    .revslider-holder .revsliderText {
+        top: -335px !important;
+    }
+    .revsliderText h1 {
+        font-size: 20px !important;
+        margin-left: 10px !important;
+        padding: 20px 30px 20px 15px !important;
+    }
+    .revsliderText h1 > span:nth-child(2) label {
+        font-size: 28px !important;
+    }   
+    .revsliderText h1 > span:first-child {
+        font-size: 18px !important;
+        margin-bottom: 10px !important; 
+    }
+    .revslider-holder .ProfileLogo {
+        top: -185px !important;
+    }
+    .revsliderText h1 > span:first-child:before {
+        height: 20px !important;
+        width: 20px !important;
+        bottom: 3px !important;
+        left: 47px !important;
+        background-size: cover !important;
+    }
+
+    @media only screen and (max-width: 551px) {
+        .revslider-holder .revsliderText {
+            top: -325px !important;
+        }
+        .revslider-holder .ProfileLogo {
+            top: -180px !important;
+        }
+    }
+    @media only screen and (max-width: 550px) {
+        .revslider-holder .revsliderText {
+            top: -310px !important;
+        }
+        .revslider-holder .ProfileLogo {
+            top: -180px !important;
+        }
+    }
+}
+@media only screen and (max-width: 540px) {
+    h2 {
+        font-size: 34px !important;
+    }
+    .Aboutme-Holder .textAboutme p, 
+    .Aboutme-Holder .textAboutme p:last-child {
+        font-size: 16px !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 32px !important;
+    }
+    h2 {
+        font-size: 30px !important;
+    } 
+    h4 {
+        font-size: 28px !important;
+    }   
+    h4 {
+        font-size: 26px !important;
+    }
+    .header-holder p {
+        margin-right: 110px !important;
+    }
+    .contact-form-holder > form input:last-of-type {
+        height: 30px !important; 
+    }
+}
+@media only screen and (max-width: 469px) {
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: 108% !important;
+    }
+    .hamburger-menu {
+        right: 30px !important;
+    }
+    .navbar .portfolio-logo:before {
+        left: 53px !important;
+    }
+}
+@media only screen and (max-width: 439px) {
+    .revslider-holder .revsliderText {
+        top: -290px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        top: -158px !important;
+    }
+    svg {
+        margin-right: 10px !important;
+    }
+    .Aboutme-Holder .textAboutme p:last-child a {
+        padding: 5px 10px !important;
+    }
+    .contact-form-holder {
+        padding: 40px 5px !important;
+    } 
+}
+@media only screen and (max-width: 399px) {
+    svg {
+        display: none !important;
+    }
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: 100% !important;
+    }
+    .Service-container .col-3 > .box-holder > .box-content h4:before {
+        height: 2px !important;
+    } 
+    .Service-container .col-3 > .box-holder > .box-content h4 {
+        padding: 0 0 15px !important;
+    }      
+    .hamburger-menu.is-active {
+        right: 10px !important;
+    }
+    .navbar .portfolio-logo {
+        width: 50% !important;
+    }
+    .Service-container .col-3 > .box-holder > .box-content p {
+        font-size: 16px !important;
+    }
+    .for-ornament {
+        padding: 0 13px;
+    }  
+    .Gallery-container:before {
+        top: 5px !important;
+        bottom: 5px !important;
+        left: 5px !important;
+        right: 5px !important;
+    }  
+    .chessSport-container .content-holder p, 
+    .basket-Sport-Container .content-holder p {
+        font-size: 16px !important;
+    }
+    .chessSport-container .content-holder, 
+    .basket-Sport-Container .content-holder {
+        padding: 20px 20px !important;
+    }
+}
+@media only screen and (max-width: 369px) {
+    .mobile-navigation {
+        width: 250px !important;
+    }
+    .App.is-click {
+        left: -253px !important;
+    }
+    .revslider-holder .revsliderText {
+        top: -160px !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .revsliderText h1 {
+        padding: 20px 40px 20px 40px !important;
+    }
+    .revslider-holder .ProfileLogo {
+        display: none !important;
+    }
+    .Aboutme-Holder .About-ImgHolder {
+        width: 40% !important;
+        top: 12px !important;
+        right: 25px !important;
+    }
+    .Aboutme-Holder .About-ImgHolder img {
+        width: 100% !important;
+    }
+    .Aboutme-Holder .textAboutme p:last-child {
+        width: 113% !important;
+        font-size: 15px !important;
+    }
+    .contact-img-holder {
+        width: 20% !important;
+    }
+    .contact-form-holder {
+        width: 80% !important;
+    }
+}
 
 

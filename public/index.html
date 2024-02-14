@@ -8,15 +8,68 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./carousel.style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></script> -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+     
+    </div>
+                <!-- hidden mobile-navigation -->
+              <div class="mobile-navigation">
+                <div class="logo">
+                   <img src="./image/nav-logo.png" width="205px" height="220px"w >
+                  </div>
+                <div class="nav-container">
+                  <a href="#home" class="NavMenuListItem smooth-scroll-link">Home</a>
+                  <a href="#Aboutme-Parent" class="NavMenuListItem smooth-scroll-link">About</a>
+                  <a href="#Services-holder" class="NavMenuListItem smooth-scroll-link">Services</a>
+                  <a href="#Gallery-holder" class="NavMenuListItem smooth-scroll-link">Gallery</a>
+                  <a href="#mySports-Container" class="NavMenuListItem smooth-scroll-link">Sports</a>
+                  <a href="#Contact-container" class="NavMenuListItem smooth-scroll-link">Contact</a>
+              </div>
+              <div class="contact">
+                <p><label>phone:</label><a href="tel + 09972371579">+63973757039</a></p>
+                <p><label>email:</label><a href="felmarkrish@gmail.com">felmarkrish@gmail.com</a></p>
+              </div>
+              <div class="copyright">
+                <p>© Copyright 2023 <a href="#home" class="NavMenuListItem smooth-scroll-link">My Portfolio</a><br>
+                  All rights reserved.</p>
+              </div>
+              </div>
+    <div id="back-top-holder">
+      <div id="back-top">^
+      </div>
+    </div>
+    
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
     
+                  <!-- JavaScript function for smooth scrolling -->
+              <script>
+              $(document).ready(function() {
+            // Smooth scroll function
+            function smoothScroll(target) {
+              var $target = $(target);
+              if ($target.length) {
+                $('html, body').animate({
+                  scrollTop: $target.offset().top
+                }, 800);
+              } else {
+                console.error('Target not found for smooth scroll:', target);
+              }
+            }
+                  // Handle click events for navigation links
+                  $('.NavMenuListItem').click(function(e) {
+                    e.preventDefault();
+                    var target = $(this).attr('href');
+                    smoothScroll(target);
+                  });
+                });
+                </script>
+
     <script>
       /** Sticky Header **/
           $(window).scroll(function() {
@@ -49,7 +102,7 @@
 	        e.preventDefault();
 	        $('html,body').animate({
 	            scrollTop: 0
-	        }, 700);
+	        }, 800);
 	    });
 	}
     </script>

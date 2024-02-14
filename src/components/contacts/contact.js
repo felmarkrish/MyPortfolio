@@ -18,7 +18,7 @@ export const Contact = () => {
   const handleBlur = (event) => {
     event.target.placeholder =
       event.target.name === "from_name"
-        ? "Enter Name"
+        ? "Enter your Name"
         : event.target.name === "from_email"
         ? "Enter your Email"
         : "Enter a message";
@@ -77,7 +77,7 @@ export const Contact = () => {
               <input
                 type="text"
                 name="from_name"
-                placeholder="Enter Name"
+                placeholder="Enter your Name"
                 required
                 onFocus={handleFocus}
                 onBlur={handleBlur}

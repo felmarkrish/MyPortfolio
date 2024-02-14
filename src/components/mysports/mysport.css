@@ -59,6 +59,13 @@
     color: #17ef1d;
     text-shadow: 0 3px 20px rgba(23, 239, 29, 0.7);
 }
+.chessSport-container .content-holder p button:active,
+.basket-Sport-Container .content-holder p button:active {
+    color: #fff;
+    text-shadow: none;
+}
+.chessSport-container .content-holder p button:active,
+.basket-Sport-Container .content-holder p button:active
 .img-holder {
     display: flex;
     justify-content: center; 

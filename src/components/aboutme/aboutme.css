@@ -1,5 +1,6 @@
 #Aboutme-Parent {
     padding: 125px 0;
+    overflow: hidden;
 }
 .Aboutme-Header {
     width: 100%;

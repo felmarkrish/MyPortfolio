@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./mysport.css";
 import sport1 from "../../components/mysports/images/Sport1.jpg";
 import sport2 from "../../components/mysports/images/Sport2.jpg";
 
-const mySport = () => {
+const MySport = () => {
+  const [showMoreChess, setShowMoreChess] = useState(false);
+  const [showMoreBasketball, setShowMoreBasketball] = useState(false);
+
+  const handleShowMoreChess = () => {
+    setShowMoreChess(!showMoreChess);
+  };
+
+  const handleShowMoreBasketball = () => {
+    setShowMoreBasketball(!showMoreBasketball);
+  };
+
   return (
     <div id="mySports-Container" className="forallBG">
       <div className="wrap">
@@ -20,15 +31,23 @@ const mySport = () => {
                   on a checkered battlefield; they are purveyors of a timeless
                   art, architects of intricate plans, and masters of foresight.
                   Engaging in the intellectual and strategic pursuit of chess,
-                  players become immersed in a world where each move is a
-                  carefully calculated step towards victory or, conversely, a
-                  potential pitfall leading to defeat. Chess, a game that has
-                  withstood the test of time, transcends generations and
-                  cultures. Its origins trace back centuries, and its enduring
-                  popularity is a testament to the intellectual allure it holds.
-                  The chessboard becomes a canvas upon which players paint their
-                  strategic visions, each piece representing a potential
-                  instrument in the orchestration of a brilliant victory.
+                  {showMoreChess && (
+                    <>
+                      players become immersed in a world where each move is a
+                      carefully calculated step towards victory or, conversely,
+                      a potential pitfall leading to defeat. Chess, a game that
+                      has withstood the test of time, transcends generations and
+                      cultures. Its origins trace back centuries, and its
+                      enduring popularity is a testament to the intellectual
+                      allure it holds. The chessboard becomes a canvas upon
+                      which players paint their strategic visions, each piece
+                      representing a potential instrument in the orchestration
+                      of a brilliant victory.
+                    </>
+                  )}
+                  <button onClick={handleShowMoreChess}>
+                    {showMoreChess ? "Show less" : "Show more"}
+                  </button>
                 </p>
               </div>
             </div>
@@ -46,15 +65,24 @@ const mySport = () => {
                   team sport played indoors or outdoors, characterized by its
                   high-scoring nature, strategic gameplay, and physical demands.
                   Basketball players, whether amateur enthusiasts, collegiate
-                  athletes, or professional stars, are known for their
-                  athleticism, skill, teamwork, and ability to perform under
-                  pressure. Here's a comprehensive description of a basketball
-                  player: A basketball player is not just an athlete; they are
-                  the embodiment of agility, strength, and finesse on the
-                  hardwood court. Engaging in the spirited game of basketball,
-                  players find themselves at the heart of a thrilling contest
-                  where every dribble, pass, and shot contributes to the rhythm
-                  of the game.
+                  athletes,
+                  {showMoreBasketball && (
+                    <>
+                      {" "}
+                      or professional stars, are known for their athleticism,
+                      skill, teamwork, and ability to perform under pressure.
+                      Here's a comprehensive description of a basketball player:
+                      A basketball player is not just an athlete; they are the
+                      embodiment of agility, strength, and finesse on the
+                      hardwood court. Engaging in the spirited game of
+                      basketball, players find themselves at the heart of a
+                      thrilling contest where every dribble, pass, and shot
+                      contributes to the rhythm of the game.
+                    </>
+                  )}
+                  <button onClick={handleShowMoreBasketball}>
+                    {showMoreBasketball ? "Show less" : "Show more"}
+                  </button>
                 </p>
               </div>
             </div>
@@ -65,4 +93,4 @@ const mySport = () => {
   );
 };
 
-export default mySport;
+export default MySport;

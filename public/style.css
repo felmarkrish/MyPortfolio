@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     /* background: transparent; */
+    scrollbar-width: none !important;
+    scrollbar-color: #874713ff #2b2a33ff;
 }
 
 body {
@@ -149,7 +151,9 @@ body {
 .contact-form-holder > form input:last-of-type,
 .mobile-navigation > .nav-container > a,
 .mobile-navigation > .contact a,
-.copyright > p a {
+.copyright > p a,
+.chessSport-container .content-holder p button, 
+.basket-Sport-Container .content-holder p button {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;

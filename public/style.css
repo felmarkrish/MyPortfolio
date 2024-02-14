@@ -71,7 +71,7 @@ body {
     bottom: 0;
     left: initial;
     position: fixed;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 .mobile-navigation > .logo {
     display: flex;
@@ -103,7 +103,7 @@ body {
     color: #ffffff;
 }
 .mobile-navigation > .contact {
-    margin: 50px 10px;
+    margin: 20px 10px;
     /* background: #000; */
 }
 .mobile-navigation > .contact label,

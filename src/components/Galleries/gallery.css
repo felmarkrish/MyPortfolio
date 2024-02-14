@@ -27,14 +27,14 @@
 }
 .Gallery-container h1 {
     text-align: center;
-    display: table;
+    display: block;
     padding: 15px 50px;
     color: #fff;
     background: #42341f;
     box-shadow: 0 0 1px rgba(23, 239, 29, 0.7);
     border-radius: 10px;
     overflow: hidden;
-    width: auto;
+    width: fit-content;
     margin: auto !important;
     position: relative;
     z-index: 1;

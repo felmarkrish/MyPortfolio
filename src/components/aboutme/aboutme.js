@@ -74,7 +74,11 @@ const About = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.4 }}
             className="About-ImgHolder col-2">
-            <img src={aboutlogos} className="About-Img"></img>
+            <img
+              src={aboutlogos}
+              alt="Felmarkrish"
+              title="Felmarkrish"
+              className="About-Img"></img>
           </motion.div>
         </motion.div>
       </div>

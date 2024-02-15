@@ -20,7 +20,12 @@ const Revslider = () => {
         whileInView={"show"}
         viewport={{ once: false, amount: 0.4 }}
         className="ProfileLogo">
-        <img src={profilelogo} alt="" className="profilelogo" />
+        <img
+          src={profilelogo}
+          alt="myLogo"
+          title="myLogo"
+          className="profilelogo"
+        />
       </motion.div>
       <motion.div
         variants={fadeIn("right", 0.2)}

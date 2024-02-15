@@ -10,15 +10,32 @@ import Contact from "./components/contacts/contact";
 import LoadingScreen from "./components/spinner/spinner"; // Import the loading component
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a delay (e.g., fetching data) before hiding the loading screen
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 10000); // Adjust the delay as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="App">
-      <Navbar />
-      <Revslider />
-      <About />
-      <Service />
-      <Gallery />
-      <MySport />
-      <Contact />
+      {loading ? (
+        <LoadingScreen />
+      ) : (
+        <>
+          <Navbar />
+          <Revslider />
+          <About />
+          <Service />
+          <Gallery />
+          <MySport />
+          <Contact />
+        </>
+      )}
     </div>
   );
 }

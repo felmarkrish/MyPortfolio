@@ -638,6 +638,9 @@ h4 {
         border: none !important;
         background: transparent !important;
     }
+    .Aboutme-Holder .textAboutme {
+        position: unset !important;
+    }
     .Aboutme-Holder {
         border: 1px solid #17ef1d !important;
         background: #055753 !important;

@@ -59,10 +59,10 @@ const Gallery = () => {
           </motion.h1>
           <div className="for-ornament">
             <motion.div
-              variants={fadeIn("up", 0.2)}
+              variants={fadeIn("left", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.5 }}
               className="carousel">
               <div className="carousel-item">
                 <img src={gal1} alt="man" title="hacker" className="img"></img>

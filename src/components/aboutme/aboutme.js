@@ -55,7 +55,9 @@ const About = () => {
                 <FontAwesomeIcon icon={faPhone} />
                 +63 9973757039
               </a>
-              <a href="#Contact-container">
+              <a
+                className="NavMenuListItem smooth-scroll-link"
+                href="#Contact-container">
                 <FontAwesomeIcon icon={faMessage} />
                 Send Message
               </a>

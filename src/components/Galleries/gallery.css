@@ -1,5 +1,6 @@
 #Gallery-holder {
     padding: 180px 0 100px;
+    overflow: hidden;
 }
 .GalImgContainers {
     background: linear-gradient(to right, #2c5364, #0f2027);

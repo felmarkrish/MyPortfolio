@@ -1,0 +1,22 @@
+/* LoadingScreen.css */
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Set background color */
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .loading-content {
+    text-align: center;
+    color: #fff; /* Set text color */
+  }
+  
+  
+  .loaded {
+    opacity: 0;
+    pointer-events: none;
+  }
+  

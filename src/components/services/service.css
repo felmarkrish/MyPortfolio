@@ -143,7 +143,6 @@
     z-index: 1;
 }
 .Service-container .col-3 > .box-holder > .box-logo .logo:before {
-    background: url(../../components/services/images/Rbackend-logo.png) no-repeat center center;
     width: 100%;
     height: 100%;
     top: 0;
@@ -152,6 +151,16 @@
     right: 0;
     z-index: -1;
 }
+.Service-container .col-3 > .box-holder.one > .box-logo .logo:before {
+    background: url(../../components/services/images/desktopapp.png) no-repeat center center;
+}
+.Service-container .col-3 > .box-holder.two > .box-logo .logo:before {
+    background: url(../../components/services/images/wordpress1.png) no-repeat center center;
+}
+.Service-container .col-3 > .box-holder.three > .box-logo .logo:before {
+    background: url(../../components/services/images/Rbackend-logo.png) no-repeat center center;
+}
+
 .Service-container .col-3 > .box-holder > .box-logo .logo:hover:before {
     opacity: 0;
 }

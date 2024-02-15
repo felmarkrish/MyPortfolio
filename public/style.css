@@ -786,7 +786,7 @@ h4 {
         position: absolute !important;
         left: initial !important;
         bottom: initial !important ;
-        top: 20px !important;
+        top: 10px !important;
         right: 5px !important;
         padding: 0 0 0 !important;
     }
@@ -876,7 +876,7 @@ h4 {
         width: 100% !important;
     }
     .Aboutme-Holder .textAboutme {
-        padding: 145px 20px 40px 50px !important;
+        /* padding: 145px 20px 40px 50px !important; */
     }
 }
 @media only screen and (max-width: 680px) {
@@ -972,7 +972,7 @@ h4 {
 }
 @media only screen and (max-width: 571px) {
     .Aboutme-Holder .textAboutme {
-        padding: 120px 20px 40px 30px !important;
+        padding: 150px 20px 40px 30px !important;
     }
     .Aboutme-Holder .textAboutme p:last-child {
         width: fit-content !important;
@@ -1051,6 +1051,9 @@ h4 {
     .contact-form-holder > form input:last-of-type {
         height: 30px !important; 
     }
+    .Aboutme-Holder .textAboutme {
+        padding: 120px 20px 40px 30px !important;
+    }    
 }
 @media only screen and (max-width: 469px) {
     .Aboutme-Holder .textAboutme p:last-child {
@@ -1061,6 +1064,17 @@ h4 {
     }
     .navbar .portfolio-logo:before {
         left: 53px !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .Aboutme-Holder .textAboutme h2 {
+        margin-bottom: 15px !important;
+        margin-top: 20px !important;
+    }
+    .Aboutme-Holder .About-ImgHolder {
+        top: 10px !important;
+        right: 10px !important;
+        width: 40% !important;
     }
 }
 @media only screen and (max-width: 439px) {

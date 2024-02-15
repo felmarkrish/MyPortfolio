@@ -107,7 +107,8 @@
 }
 .Aboutme-Holder .textAboutme h2 {
     font-size: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
+    margin-top: 25px !important;
 }
 .Aboutme-Holder .textAboutme p:last-child {
     font-size: 20px;

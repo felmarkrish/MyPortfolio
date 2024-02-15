@@ -48,13 +48,18 @@ const Gallery = () => {
   return (
     <div id="Gallery-holder" className="forallBG">
       <div className="wrap">
-        <div className="Gallery-container">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }}
+          className="Gallery-container">
           <video src={videobg} autoPlay loop muted width="100%" height="100%" />
           <motion.h1
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}>
+            viewport={{ once: false, amount: 0.5 }}>
             Galleries
           </motion.h1>
           <div className="for-ornament">
@@ -90,7 +95,7 @@ const Gallery = () => {
               </div>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

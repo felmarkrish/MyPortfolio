@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import "./mysport.css";
 import sport1 from "../../components/mysports/images/Sport1.jpg";
 import sport2 from "../../components/mysports/images/Sport2.jpg";
+// motion
+import { motion } from "framer-motion";
+//variant for motion
+import { fadeIn } from "../variants";
 
 const MySport = () => {
   const [showMoreChess, setShowMoreChess] = useState(false);
@@ -19,7 +23,12 @@ const MySport = () => {
     <div id="mySports-Container" className="forallBG">
       <div className="wrap">
         <div className="mySport-box-holder">
-          <div className="Chess-box-holder">
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="Chess-box-holder">
             <div className="img-holder col-2">
               <img src={sport1} alt="mySport" title="mySport"></img>
             </div>
@@ -51,8 +60,13 @@ const MySport = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="basket-box-holder">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="basket-box-holder">
             <div className="img-holder col-2">
               <img src={sport2} alt="mySport" title="mySport"></img>
             </div>
@@ -86,7 +100,7 @@ const MySport = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

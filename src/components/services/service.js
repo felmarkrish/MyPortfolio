@@ -1,42 +1,65 @@
 import React from "react";
 import "./service.css";
 import backendlogo from "../../components/services/images/Rbackend-logo.png";
+// motion
+import { motion } from "framer-motion";
+//variant for motion
+import { fadeIn } from "../variants";
 
 const Services = () => {
   return (
     <div id="Services-holder" className="forallBG">
       <div className="wrap">
         <div className="Service-container">
-          <div className="header-holder">
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="header-holder">
             <h1>Our Services</h1>
             <p>What i Will do for You</p>
-          </div>
+          </motion.div>
           <div className="col-3">
-            <div className="box-holder one">
+            <motion.div
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className="box-holder one">
               <div className="box-logo">
                 <div className="logo"></div>
               </div>
               <div className="box-content">
-                <h4>Graphic Designer</h4>
+                <h4>Desktop-app Developer</h4>
                 <p>
-                  Create visual concepts with the goal of attracting the
-                  interest of clients through digital and physical designs that
-                  typically use graphics, images, art, and other visual
-                  elements. Although Graphic Designers may use a variety of
-                  tools to create their designs, all Graphic Designers must be
-                  able to use their hands at least occasionally to create
-                  designs, even if they prefer to rely on their digital skills
-                  and graphic design software.
+                  Creating an application locally for computer devices
+                  (operating systems) is referred to as desktop application
+                  development. Desktop app developers build these applications
+                  that are used specifically on laptops and desktops. A desktop
+                  application can be defined as a program that is installed or
+                  runs directly on the system. It can be called from the GUI or
+                  a terminal window by double-clicking on its icon, which will
+                  open up its main window. Assessing and using the desktop
+                  application is a straightforward process.
                 </p>
                 <p>
-                  {" "}
-                  <a className="btn-more" href="#">
+                  <a
+                    className="btn-more"
+                    href="https://radixweb.com/blog/desktop-application-development-guide"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     Read More
                   </a>
                 </p>
               </div>
-            </div>
-            <div className="box-holder two">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.4 }}
+              className="box-holder two">
               <div className="box-logo">
                 <div className="logo"></div>
               </div>
@@ -55,14 +78,22 @@ const Services = () => {
                   layouts.
                 </p>
                 <p>
-                  {" "}
-                  <a className="btn-more" href="#">
+                  <a
+                    className="btn-more"
+                    href="https://www.coursera.org/articles/wordpress-developer"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     Read More
                   </a>
                 </p>
               </div>
-            </div>
-            <div className="box-holder three">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className="box-holder three">
               <div className="box-logo">
                 <div className="logo"></div>
               </div>
@@ -78,13 +109,16 @@ const Services = () => {
                   intelligently each and every day..
                 </p>
                 <p>
-                  {" "}
-                  <a className="btn-more" href="#">
+                  <a
+                    className="btn-more"
+                    href="https://www.coursera.org/articles/front-end-developer"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     Read More
                   </a>
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

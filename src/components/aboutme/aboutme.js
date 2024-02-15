@@ -4,16 +4,30 @@ import aboutlogo from "../../components/aboutme/images/hacker_PNG.png";
 import aboutlogos from "../../components/aboutme/images/profile22.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMessage, faPhone } from "@fortawesome/free-solid-svg-icons";
+// motion
+import { motion } from "framer-motion";
+//variant for motion
+import { fadeIn } from "../variants";
 
 const About = () => {
   return (
     <div id="Aboutme-Parent" className="forallBG">
       <div className="wrap">
-        <div className="Aboutme-Header">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="Aboutme-Header">
           <h1>About Me</h1>
-        </div>
+        </motion.div>
         <div className="Aboutme-Holder">
-          <div className="textAboutme col-2">
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.5 }}
+            className="textAboutme col-2">
             <p>Hello, Welcome</p>
             <h2>I'm Felmarkrish Clavecilla</h2>
             <p>
@@ -23,7 +37,11 @@ const About = () => {
               things all the time. Currently, I am looking for new career
               opportunities my current job position cannot provide.
             </p>
-            <p>
+            <motion.p
+              variants={fadeIn("right", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.5 }}>
               <a href="tel +63 9973757039">
                 <FontAwesomeIcon icon={faPhone} />
                 +63 9973757039
@@ -32,11 +50,16 @@ const About = () => {
                 <FontAwesomeIcon icon={faMessage} />
                 Send Message
               </a>
-            </p>
-          </div>
-          <div className="About-ImgHolder col-2">
+            </motion.p>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.5 }}
+            className="About-ImgHolder col-2">
             <img src={aboutlogos} className="About-Img"></img>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

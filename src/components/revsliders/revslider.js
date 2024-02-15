@@ -17,7 +17,7 @@ const Revslider = () => {
           <span>
             I'm <label>Felmarkrish</label>
           </span>
-          <span>Website Designer</span>
+          <span>Website Developer</span>
         </h1>
       </div>
     </div>

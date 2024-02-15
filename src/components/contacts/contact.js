@@ -2,6 +2,10 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import videoclip from "../../components/contacts/video/bg-videoclip-2.mp4";
+// motion
+import { motion } from "framer-motion";
+//variant for motion
+import { fadeIn } from "../variants";
 
 export const Contact = () => {
   const form = useRef();
@@ -58,7 +62,12 @@ export const Contact = () => {
   return (
     <div id="Contact-container" className="forallBG">
       <div className="wrap">
-        <div className="Contact-holder">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="Contact-holder">
           <div className="contact-img-holder col-2">
             <video
               src={videoclip}
@@ -107,7 +116,7 @@ export const Contact = () => {
               <input type="submit" value="Send" />
             </form>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

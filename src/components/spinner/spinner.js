@@ -28,7 +28,7 @@ const LoadingScreen = () => {
   return (
     <div className={`loading-screen ${loadingComplete ? "loaded" : ""}`}>
       <div className="loading-content">
-        <img src={loadingGif} alt="Loading" />
+        {/* <img src={loadingGif} alt="Loading" /> */}
         <p>Loading... {progress}%</p>
         <div className="loading-bar" style={{ width: `${progress}%` }}></div>
       </div>

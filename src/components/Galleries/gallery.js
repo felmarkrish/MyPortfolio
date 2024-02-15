@@ -9,6 +9,7 @@ import gal3 from "../../components/Galleries/images/gal-3.jpg";
 import gal4 from "../../components/Galleries/images/gal-4.png";
 import gal5 from "../../components/Galleries/images/gal-5.jpg";
 import gal6 from "../../components/Galleries/images/gal-6.jpg";
+import videobg from "../../assets/video-bg2.mp4";
 // motion
 import { motion } from "framer-motion";
 //variant for motion
@@ -48,6 +49,7 @@ const Gallery = () => {
     <div id="Gallery-holder" className="forallBG">
       <div className="wrap">
         <div className="Gallery-container">
+          <video src={videobg} autoPlay loop muted width="100%" height="100%" />
           <motion.h1
             variants={fadeIn("up", 0.2)}
             initial="hidden"

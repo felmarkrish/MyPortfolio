@@ -1,6 +1,7 @@
 import React from "react";
 import "./service.css";
 import backendlogo from "../../components/services/images/Rbackend-logo.png";
+import videobg from "../../assets/video-bg5.mp4";
 // motion
 import { motion } from "framer-motion";
 //variant for motion
@@ -27,6 +28,14 @@ const Services = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
               className="box-holder one">
+              <video
+                src={videobg}
+                autoPlay
+                loop
+                muted
+                width="100%"
+                height="100%"
+              />
               <div className="box-logo">
                 <div className="logo"></div>
               </div>
@@ -60,6 +69,14 @@ const Services = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.4 }}
               className="box-holder two">
+              <video
+                src={videobg}
+                autoPlay
+                loop
+                muted
+                width="100%"
+                height="100%"
+              />
               <div className="box-logo">
                 <div className="logo"></div>
               </div>
@@ -94,6 +111,14 @@ const Services = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
               className="box-holder three">
+              <video
+                src={videobg}
+                autoPlay
+                loop
+                muted
+                width="100%"
+                height="100%"
+              />
               <div className="box-logo">
                 <div className="logo"></div>
               </div>

@@ -65,7 +65,8 @@ textarea {
     background: #000 !important;
     color: #fff !important;
 }
-video {
+.contact-img-holder  video {
+    position: relative;
     object-fit: cover;
     opacity: 0.75;
 }

@@ -1,5 +1,6 @@
 #Services-holder {
     padding: 125px 0;
+    overflow: hidden;
 }
 .header-holder {
     text-align: center;
@@ -68,6 +69,14 @@
     box-shadow: 0 3px 5px rgba(23, 239, 29, 0.7);
     position: relative;
     z-index: 1;
+}
+.Service-container .col-3 > .box-holder video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.05;
 }
 .Service-container .col-3 > .box-holder:before {
       background: url(../../assets/HackerPseudo.png) no-repeat center center;

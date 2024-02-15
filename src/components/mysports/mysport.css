@@ -1,5 +1,6 @@
 #mySports-Container {
     padding: 120px 0;
+    overflow: hidden;
 }
 .mySport-box-holder {
     display: flex;
@@ -68,6 +69,8 @@
     display: flex;
     justify-content: center; 
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 .img-holder img {
     border-radius: 20px;

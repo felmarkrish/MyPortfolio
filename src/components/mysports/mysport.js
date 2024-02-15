@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./mysport.css";
 import sport1 from "../../components/mysports/images/Sport1.jpg";
 import sport2 from "../../components/mysports/images/Sport2.jpg";
+import videobg from "../../assets/video-bg5.mp4";
 // motion
 import { motion } from "framer-motion";
 //variant for motion
@@ -29,6 +30,14 @@ const MySport = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="Chess-box-holder">
+            <video
+              src={videobg}
+              autoPlay
+              loop
+              muted
+              width="100%"
+              height="100%"
+            />
             <div className="img-holder col-2">
               <img src={sport1} alt="mySport" title="mySport"></img>
             </div>
@@ -67,6 +76,14 @@ const MySport = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="basket-box-holder">
+            <video
+              src={videobg}
+              autoPlay
+              loop
+              muted
+              width="100%"
+              height="100%"
+            />
             <div className="img-holder col-2">
               <img src={sport2} alt="mySport" title="mySport"></img>
             </div>

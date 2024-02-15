@@ -4,6 +4,7 @@ import aboutlogo from "../../components/aboutme/images/hacker_PNG.png";
 import aboutlogos from "../../components/aboutme/images/profile22.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMessage, faPhone } from "@fortawesome/free-solid-svg-icons";
+import videobg from "../../assets/video-bg5.mp4";
 // motion
 import { motion } from "framer-motion";
 //variant for motion
@@ -28,6 +29,14 @@ const About = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.5 }}
             className="textAboutme col-2">
+            <video
+              src={videobg}
+              autoPlay
+              loop
+              muted
+              width="100%"
+              height="100%"
+            />
             <p>Hello, Welcome</p>
             <h2>I'm Felmarkrish Clavecilla</h2>
             <p>

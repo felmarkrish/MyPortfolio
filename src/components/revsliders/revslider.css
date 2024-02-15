@@ -1,6 +1,7 @@
 .revsliderlogo {
     width: 100%;
-    position: relative;
+    position: unset;
+    visibility: hidden;
     vertical-align: top;
     z-index: 1;
 }
@@ -16,27 +17,32 @@
 .revslider-holder {
     overflow: hidden;
     box-shadow: 0 3px 16px rgb(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+.revslider-holder video {
+  opacity: 1;
 }
 .revslider-holder .ProfileLogo {
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    right: 50px;
-    top: 0;
-    left: initial;
-    bottom: 0;
-    margin: auto;
-    padding: 0 160px 80px;
-    /* background: url(../../components/revsliders/image/bg-8.png) no-repeat center center; */
-    background-size: cover;
-    overflow: hidden;
-    z-index: 1;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  left: initial;
+  bottom: 0;
+  margin: auto;
+  padding: 0 160px 0;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 0 !important;
 }
 .revsliderText {
     position: absolute;
     background: rgb(67 53 32 / 40%);
-    top: 0;
-    bottom: 80px;
+    top: 120px;
+    bottom: 0;
     box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.60);
     z-index: 1;
     left: 120px;

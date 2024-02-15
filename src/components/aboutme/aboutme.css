@@ -88,6 +88,14 @@
     right: 15px;
     z-index: -1;
 }
+.Aboutme-Holder .textAboutme video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+}
 .Aboutme-Holder .textAboutme p:first-child {
     margin-bottom: 40px;
     color: #17ef1d;

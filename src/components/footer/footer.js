@@ -1,15 +1,17 @@
 import React from "react";
 import "./footer.css";
 import { Link } from "react-scroll";
-import logo from "../../components/footer/image/footer-Logo.png";
+import footerlogo from "../../components/footer/image/footer-Logo.png";
+import footerbg from "../../components/footer/image/footer-bg.jpg";
 
 const footer = () => {
   return (
     <div id="footer" className="forallBG">
+      <img src={footerbg} alt=""></img>
       <div className="wrap">
         <div className="footer-container">
           <div className="col-1 col">
-            <img src={logo} alt="footer-logo" title="footer-logo"></img>
+            <img src={footerlogo} alt="footer-logo" title="footer-logo"></img>
             <p>
               © Copyright 2024
               <a href="#home" class="NavMenuListItem smooth-scroll-link">

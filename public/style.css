@@ -6,7 +6,9 @@
     scrollbar-width: none !important;
     scrollbar-color: #874713ff #2b2a33ff;
 }
-
+a {
+    cursor: default !important;
+}
 body {
     width: 100%;
     height: 100%;

@@ -4,7 +4,7 @@
 .footer-container {
     display: flex;
     justify-content: space-around;
-    padding: 100px 0;
+    padding: 120px 0 100px;
 }
 .footer-container > .col {
     /* width: calc(); */
@@ -40,4 +40,17 @@
     border-bottom: 2px solid #17ef1d;
     padding-bottom: 5px;
     margin-bottom: 20px !important;
+}
+#footer:before {
+    /* background: url(../../components/footer/image/footer-bg.jpg) no-repeat center center !important; */
+    background: unset !important;
+}
+#footer:after {
+    background: rgb(67 53 32 / 50%);
+}
+#footer > img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
 }

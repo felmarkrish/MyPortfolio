@@ -6,6 +6,9 @@ import videoclip from "../../components/contacts/video/bg-videoclip-2.mp4";
 import { motion } from "framer-motion";
 //variant for motion
 import { fadeIn } from "../variants";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+// import { faFirstAid } from "@fortawesome/free-solid-svg-icons";
 
 export const Contact = () => {
   const form = useRef();
@@ -45,7 +48,9 @@ export const Contact = () => {
       })
       .then(
         () => {
-          console.log("Message Successfully Send!");
+          // alert("Successfully Send!");
+          toast.success("Successfully Send!");
+
           // Clear the input values after successful submission
           setFormData({
             from_name: "",
@@ -115,6 +120,7 @@ export const Contact = () => {
               />
               <input type="submit" value="Send" />
             </form>
+            <ToastContainer />
           </div>
         </motion.div>
       </div>

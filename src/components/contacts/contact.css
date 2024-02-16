@@ -1,5 +1,6 @@
 #Contact-container {
     padding: 80px 0;
+    overflow: hidden;
 }
 .Contact-holder {
     /* background: rgba(2, 89, 85, 0.95); */

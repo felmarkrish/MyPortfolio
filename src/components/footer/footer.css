@@ -46,7 +46,7 @@
     background: unset !important;
 }
 #footer:after {
-    background: rgb(67 53 32 / 50%);
+    background: rgb(67 53 32 / 80%);
 }
 #footer > img {
     height: 100%;

@@ -79,7 +79,8 @@
     opacity: 0.05;
 }
 .Service-container .col-3 > .box-holder:before {
-      background: url(../../assets/HackerPseudo.png) no-repeat center center;
+      background: url(../../components/services/images/service-bg.webp) no-repeat center center;
+      background-size: cover;
       width: 100%;
       height: 100%;
       top: 0;

@@ -43,34 +43,60 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </div>
       <div className="NavMenu">
-        <a href="#home" className="NavMenuListItem smooth-scroll-link">
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+          className="NavMenuListItem smooth-scroll-link">
           Home
-        </a>
-        <a
-          href="#Aboutme-Parent"
+        </Link>
+        <Link
+          to="Aboutme-Parent"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
           className="NavMenuListItem smooth-scroll-link">
           About
-        </a>
-        <a
-          href="#Services-holder"
+        </Link>
+        <Link
+          to="Services-holder"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
           className="NavMenuListItem smooth-scroll-link">
           Services
-        </a>
-        <a
-          href="#Gallery-holder"
+        </Link>
+        <Link
+          to="Gallery-holder"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
           className="NavMenuListItem smooth-scroll-link">
           Gallery
-        </a>
-        <a
-          href="#mySports-Container"
+        </Link>
+        <Link
+          to="mySports-Container"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
           className="NavMenuListItem smooth-scroll-link">
           Sports
-        </a>
-        <a
-          href="#Contact-container"
+        </Link>
+        <Link
+          to="Contact-container"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
           className="NavMenuListItem smooth-scroll-link">
           Contact
-        </a>
+        </Link>
       </div>
       <div className="hamburger-menu">
         <div className="mobile-nav-container">

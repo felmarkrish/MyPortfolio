@@ -28,14 +28,14 @@ const Services = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
               className="box-holder one">
-              <video
+              {/* <video
                 src={videobg}
                 autoPlay
                 loop
                 muted
                 width="100%"
                 height="100%"
-              />
+              /> */}
               <div className="box-logo">
                 <div className="logo"></div>
               </div>
@@ -69,14 +69,14 @@ const Services = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.4 }}
               className="box-holder two">
-              <video
+              {/* <video
                 src={videobg}
                 autoPlay
                 loop
                 muted
                 width="100%"
                 height="100%"
-              />
+              /> */}
               <div className="box-logo">
                 <div className="logo"></div>
               </div>
@@ -111,14 +111,14 @@ const Services = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
               className="box-holder three">
-              <video
+              {/* <video
                 src={videobg}
                 autoPlay
                 loop
                 muted
                 width="100%"
                 height="100%"
-              />
+              /> */}
               <div className="box-logo">
                 <div className="logo"></div>
               </div>

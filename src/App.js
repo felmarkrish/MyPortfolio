@@ -7,6 +7,7 @@ import Service from "./components/services/service";
 import Gallery from "./components/Galleries/gallery";
 import MySport from "./components/mysports/mysport";
 import Contact from "./components/contacts/contact";
+import Footer from "./components/footer/footer";
 import LoadingScreen from "./components/spinner/spinner"; // Import the loading component
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Gallery />
           <MySport />
           <Contact />
+          <Footer />
         </>
       )}
     </div>

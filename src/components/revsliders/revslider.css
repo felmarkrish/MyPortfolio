@@ -22,7 +22,7 @@
 }
 .revslider-holder video {
   opacity: 1;
-  position: absolute;
+  position: absolute !important;
 }
 .revslider-holder .ProfileLogo {
   width: fit-content;

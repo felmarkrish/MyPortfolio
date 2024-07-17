@@ -3,12 +3,27 @@
 import React, { useEffect } from "react";
 import "./gallery.css";
 import "./gallery.min.style.css";
-import gal1 from "../../components/Galleries/images/gal-1.jpg";
-import gal2 from "../../components/Galleries/images/gal-2.jpg";
-import gal3 from "../../components/Galleries/images/gal-3.jpg";
-import gal4 from "../../components/Galleries/images/gal-4.png";
-import gal5 from "../../components/Galleries/images/gal-5.jpg";
-import gal6 from "../../components/Galleries/images/gal-6.jpg";
+// import gal1 from "../../components/Galleries/images/pic1.jpg";
+// import gal2 from "../../components/Galleries/images/gal-2.jpg";
+// import gal3 from "../../components/Galleries/images/gal-3.jpg";
+// import gal4 from "../../components/Galleries/images/gal-4.png";
+// import gal5 from "../../components/Galleries/images/gal-5.jpg";
+// import gal6 from "../../components/Galleries/images/gal-6.jpg";
+import pic1 from "../../components/Galleries/images/pic1.jpg";
+import pic2 from "../../components/Galleries/images/pic2.jpg";
+import pic3 from "../../components/Galleries/images/pic3.jpg";
+import pic4 from "../../components/Galleries/images/pic4.jpg";
+import pic5 from "../../components/Galleries/images/pic5.jpg";
+import pic6 from "../../components/Galleries/images/pic6.jpg";
+import pic7 from "../../components/Galleries/images/pic7.jpg";
+import pic8 from "../../components/Galleries/images/pic8.jpg";
+import pic9 from "../../components/Galleries/images/pic9.jpg";
+import pic10 from "../../components/Galleries/images/pic10.jpg";
+import pic11 from "../../components/Galleries/images/pic11.jpg";
+import pic12 from "../../components/Galleries/images/pic12.jpg";
+import pic13 from "../../components/Galleries/images/pic13.jpg";
+import pic14 from "../../components/Galleries/images/pic14.jpg";
+import pic15 from "../../components/Galleries/images/pic15.jpg";
 import videobg from "../../assets/video-bg2.mp4";
 // motion
 import { motion } from "framer-motion";
@@ -70,28 +85,64 @@ const Gallery = () => {
               viewport={{ once: false, amount: 0.5 }}
               className="carousel">
               <div className="carousel-item">
-                <img src={gal1} alt="man" title="hacker" className="img"></img>
-                <h5>Hacker 1</h5>
+                <img src={pic1} alt="man" title="gal-1" className="img"></img>
+                <h5>Photo</h5>
               </div>
               <div className="carousel-item">
-                <img src={gal2} alt="man" title="hacker" className="img"></img>
-                <h5>Hacker 2</h5>
+                <img src={pic2} alt="man" title="gal-2" className="img"></img>
+                <h5>Photo</h5>
               </div>
               <div className="carousel-item">
-                <img src={gal3} alt="man" title="hacker" className="img"></img>
-                <h5>Hacker 3</h5>
+                <img src={pic3} alt="man" title="gal-3" className="img"></img>
+                <h5>Photo</h5>
               </div>
               <div className="carousel-item">
-                <img src={gal4} alt="man" title="hacker" className="img"></img>
-                <h5>Hacker 4</h5>
+                <img src={pic4} alt="man" title="gal-4" className="img"></img>
+                <h5>Photo</h5>
               </div>
               <div className="carousel-item">
-                <img src={gal5} alt="man" title="hacker" className="img"></img>
-                <h5>Hacker 5</h5>
+                <img src={pic5} alt="man" title="gal-5" className="img"></img>
+                <h5>Photo</h5>
               </div>
               <div className="carousel-item">
-                <img src={gal6} alt="man" title="hacker" className="img"></img>
-                <h5>Hacker 6</h5>
+                <img src={pic6} alt="man" title="gal-6" className="img"></img>
+                <h5>Photo</h5>
+              </div>
+              <div className="carousel-item">
+                <img src={pic7} alt="man" title="gal-7" className="img"></img>
+                <h5>Photo</h5>
+              </div>
+              <div className="carousel-item">
+                <img src={pic8} alt="man" title="gal-8" className="img"></img>
+                <h5>Photo</h5>
+              </div>
+              <div className="carousel-item">
+                <img src={pic9} alt="man" title="gal-9" className="img"></img>
+                <h5>Photo</h5>
+              </div>
+              <div className="carousel-item">
+                <img src={pic10} alt="man" title="gal-10" className="img"></img>
+                <h5>Photo</h5>
+              </div>
+              <div className="carousel-item">
+                <img src={pic11} alt="man" title="gal-11" className="img"></img>
+                <h5>Photo</h5>
+              </div>
+              <div className="carousel-item">
+                <img src={pic12} alt="man" title="gal-12" className="img"></img>
+                <h5>Photo</h5>
+              </div>
+              <div className="carousel-item">
+                <img src={pic13} alt="man" title="gal-13" className="img"></img>
+                <h5>Photo</h5>
+              </div>
+              <div className="carousel-item">
+                <img src={pic14} alt="man" title="gal-14" className="img"></img>
+                <h5>Photo</h5>
+              </div>
+              <div className="carousel-item">
+                <img src={pic15} alt="man" title="gal-15" className="img"></img>
+                <h5>Photo</h5>
               </div>
             </motion.div>
           </div>

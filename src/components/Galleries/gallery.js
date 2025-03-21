@@ -75,7 +75,7 @@ const Gallery = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.5 }}>
-            Galleries
+            My projects
           </motion.h1>
           <div className="for-ornament">
             <motion.div

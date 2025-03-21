@@ -9,7 +9,7 @@
 .carousel .carousel-item {
 	cursor: -webkit-grab;
 	cursor: grab;
-	width: 350px;
+	width: 470px;
 	display: flex;
     flex-direction: column;
 }

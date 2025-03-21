@@ -76,3 +76,22 @@
 .carousel {
     height: 500px !important;
 }
+.carousel-item h5 > a {
+    color: #fff !important;
+    z-index: -2;
+    position: relative;
+}
+.carousel-item h5 > a:hover,
+.carousel-item.active h5 > a:hover  {
+    color: #039be5 !important;
+}
+.carousel-item.active h5 > a {
+    color: #fff !important;
+    z-index: 1 !important;
+}
+a {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}

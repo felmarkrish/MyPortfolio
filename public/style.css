@@ -175,7 +175,8 @@ video {
 .mobile-navigation > .contact a,
 .copyright > p a,
 .chessSport-container .content-holder p button, 
-.basket-Sport-Container .content-holder p button {
+.basket-Sport-Container .content-holder p button
+a {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
